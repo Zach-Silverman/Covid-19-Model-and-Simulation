@@ -28,7 +28,7 @@ class Button:
         self.y = y
         self.clickedCounter = 0
     #size is a tuple
-    #based on external idea from https://www.youtube.com/watch?v=4_9twnEduFA&t=176s&ab_channel=TechWithTim
+
     def drawButton(self,insideColour):
         pygame.draw.rect(self.screen, insideColour,(self.x-2, self.y-2, self.width+4, self.height+4))
         pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
@@ -159,20 +159,22 @@ class Simulation:
                     # person2 = (person(ra.randint(minimum, self.width-10),
                                         # ra.randint(minimum, self.height-10), 'healthy', socialDistancing))
                     # people.append(person2)
+        
         if 'Medium' in results:
             for guy in people:
+                #50% of people social distancing in a population of 200
                 if personCount >= 100:
                     break
                 guy.socialDistancing = True
                 personCount+=1
         elif 'High' in results:
             for guy in people:
+                #75% of people social distancing in a population of 200
                 if personCount >= 150:
                     break
                 guy.socialDistancing = True
                 personCount += 1
         people.insert(0, patientZero)
-        # print(person for person in people)
         
     def generateQuarintineException(self,person):
         if person.status == 'sick':

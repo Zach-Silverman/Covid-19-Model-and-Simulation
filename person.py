@@ -35,7 +35,7 @@ class person:
         self.colour = 0
         self.distance = 0
         self.healthyCount = 200
-        #based on video https://www.youtube.com/watch?v=BoxCXgrY680&ab_channel=EddieSharick
+        
         if not self.socialDistancing:
             while -0.50 < self.velocityOfX < 0.50 or -0.50 < self.velocityOfY < .50:
                 self.velocityOfX = ra.uniform(-5, 5)
