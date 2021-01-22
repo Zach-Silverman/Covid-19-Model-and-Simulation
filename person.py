@@ -28,8 +28,8 @@ class person:
         self.recoveryTime = 200
         self.isSick = 0
         self.leftBounds = 2
-        self.downbounds = 795
-        self.upbounds = 2
+        self.downBounds = 795
+        self.upBounds = 2
         self.rightBounds = 1195
         self.recoveredCount = 0
         self.colour = 0
@@ -63,22 +63,22 @@ class person:
         if death == 1 or death == 2 or death == 3:
            return True
         return False
-    #based on video https://www.youtube.com/watch?v=BoxCXgrY680&ab_channel=EddieSharick
+    
     def movePerson(self):
         if not self.socialDistancing:
             self.x += (self.velocityOfX)
             self.y += (self.velocityOfY)
-    #based on video https://www.youtube.com/watch?v=BoxCXgrY680&ab_channel=EddieSharick
+    
     def updatePerson(self,people,wall):
         self.movePerson()
-        self.checkCollisionWithBorder()
+        self.checkCollisionWithBorder(self.leftBounds,self.rightBounds,
+                                      self.upBounds,self.downBounds)
         if wall:
             self.checkCollisionWithWall(wall)
         for person in people:
             #check that the person in the list of the people is not ourselves
             if self != person:
                 if self.iscollidingWithOther(person):
-                    self.updateCollisionVeolocities(person)
                     if self.status == 'sick' and person.status == 'healthy':
                         person.status = 'sick'
                         return True
@@ -86,7 +86,7 @@ class person:
                           self.status = 'sick'
                           return True
         self.checkRecovery()
-    #based on video https://www.youtube.com/watch?v=BoxCXgrY680&ab_channel=EddieSharick
+   
     def checkRecovery(self):
         if self.status == 'sick':
             self.isSick += 1
@@ -97,19 +97,27 @@ class person:
                 return True
         return False
              
-    def checkCollisionWithBorder(self):
+    def checkCollisionWithBorder(self,leftBounds = 0,rightBounds = 0,upBounds = 0,downBounds = 0):
         #if we hit the leftside of the boarder
-        if self.x - self.radius < self.leftBounds and self.velocityOfX < 0:
+        if self.x - self.radius < leftBounds and self.velocityOfX < 0:
             self.velocityOfX *= -1
         #if we hit the rightside of the border
-        elif self.x + self.radius > self.rightBounds and self.velocityOfX > 0:
+        elif self.x + self.radius > rightBounds and self.velocityOfX > 0:
             self.velocityOfX *= -1
         #if we hit the bottom of the border
-        elif self.y + self.radius > self.downbounds and self.velocityOfY > 0:
+        elif self.y + self.radius > downBounds and self.velocityOfY > 0:
             self.velocityOfY *= -1
         #if we hit the top of the border
-        elif self.y - self.radius < self.upbounds and self.velocityOfY < 0:
+        elif self.y - self.radius < upBounds and self.velocityOfY < 0:
             self.velocityOfY *= -1
+            
+    # def checkCollisionWithQuarintine(self,leftBounds,rightBounds,downBounds):
+        # if self.x >= leftBounds and self.x <= rightBounds and self.velocityOfY > 0:
+            # if self.y + self.radius > downBounds:
+                # self.velocityOfY *= -1
+        # elif self.x <= leftBounds and self.y >= downBounds:
+            # if self.x + self.radius > leftBounds and self.velocityOfX > 0:
+                # self.velocityOfX *= -1
             
     def checkCollisionWithWall(self,wall):
         rightBoundOfWall = 462
@@ -122,7 +130,8 @@ class person:
         if self.x < rightBoundOfWall and  self.x >wall.x:
             if self.y - self.radius < wall.height:
                 self.velocityOfY *=-1
-    #based on video https://www.youtube.com/watch?v=BoxCXgrY680&ab_channel=EddieSharick
+
+   
     def iscollidingWithOther(self,otherPerson):
         if isinstance(otherPerson,person):
             #calculate distance betweeen two points by using c = sqrt(a**2 + b**2)
@@ -132,22 +141,7 @@ class person:
             if  abs(self.distance) <= self.radius + otherPerson.radius:
                 return True
             return False
-    #based on video https://www.youtube.com/watch?v=Vs47xPGoSqU&ab_channel=EddieSharick
-    def updateCollisionVeolocities(self,other):
-        # if both are not social distancing
-        if not self.socialDistancing and not other.socialDistancing:
-            temp = self.velocityOfX 
-            self.velocityOfX = other.velocityOfX
-            other.velocityOfX = temp
-            temp = self.velocityOfY
-            self.velocityOfY = other.velocityOfY
-            other.velocityOfY = temp
-           # attempt at handling one static and one moving collision
-        # elif other.socialDistancing:
-        #     temp = self.velocityOfX
-        #     self.velocityOfX = self.velocityOfY
-        #     self.velocityOfY = temp
             
     def __str__(self):
-        return str(self.status) + str((self.x,self.y))        
+        return str(self.status) + str((self.x,self.y)) + " " + "social distancing " + str(self.socialDistancing)       
 
