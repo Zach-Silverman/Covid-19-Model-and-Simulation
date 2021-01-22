@@ -32,7 +32,7 @@ class Button:
     def drawButton(self,insideColour):
         pygame.draw.rect(self.screen, insideColour,(self.x-2, self.y-2, self.width+4, self.height+4))
         pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
-        font = pygame.font.SysFont('comicsans',20)
+        font = pygame.font.SysFont('Helvetica', 20)
         text = font.render(self.text,1,black)
         self.screen.blit(text, (self.x + (self.width/2 - (text.get_width()/2)),
                         self.y + (self.height/2 - (text.get_height()/2))))
@@ -58,7 +58,7 @@ class Menu:
         buttonList = []
         buttonTitles = ['High Social Distancing',
                         'Medium Social Distancing', 'No Social Distancing',
-                        'Social Bubbles', 'Quarantine enabled?']
+                        'Social Bubbles', 'Quarantine Enabled?']
         for title in buttonTitles:
             button = Button(width,height,title,blue,None,screen,x,y)
             buttonList.append(button)
