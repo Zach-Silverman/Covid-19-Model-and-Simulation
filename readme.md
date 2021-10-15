@@ -26,7 +26,7 @@
   ```sh
   pip install -r requirements.txt
   ```
-*Once you have successfully install all of the libraries to their <br> required version then you should be good to run the program
+* Once you have successfully install all of the libraries to their <br> required version then you should be good to run the program
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
