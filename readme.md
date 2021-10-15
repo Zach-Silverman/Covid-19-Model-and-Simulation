@@ -31,15 +31,6 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-* **python3 project.py**
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 - [] You can emulate social bubbles by clicking the social bubbles button
@@ -49,6 +40,16 @@
     - [] This is accomplished by clicking the social distancing button
     - [] The social distancing button freezes a certain percantage of the population
     - [] As we decrease the levels of social distancing the percentage of frozen people decreases
+
+<!-- USAGE EXAMPLES -->
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Usage
+* **python3 project.py**
+
+
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

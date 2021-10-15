@@ -54,7 +54,7 @@ class Menu:
         buttonList = []
         buttonTitles = ['High Social Distancing',
                         'Medium Social Distancing', 'No Social Distancing',
-                        'Social Bubbles', 'Quarantine Enabled?']
+                        'Social Bubbles', 'Quarantine Enabled']
         for title in buttonTitles:
             button = Button(width,height,title,blue,black,screen,x,y)
             buttonList.append(button)
