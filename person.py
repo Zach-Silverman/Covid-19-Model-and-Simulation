@@ -1,6 +1,5 @@
 import pygame, math
 import random as ra
-import numpy as np
 "status can be either 'healthy', 'sick', or 'recovered'"
 
 """
@@ -111,13 +110,13 @@ class person:
         elif self.y - self.radius < upBounds and self.velocityOfY < 0:
             self.velocityOfY *= -1
             
-    # def checkCollisionWithQuarintine(self,leftBounds,rightBounds,downBounds):
-        # if self.x >= leftBounds and self.x <= rightBounds and self.velocityOfY > 0:
-            # if self.y + self.radius > downBounds:
-                # self.velocityOfY *= -1
-        # elif self.x <= leftBounds and self.y >= downBounds:
-            # if self.x + self.radius > leftBounds and self.velocityOfX > 0:
-                # self.velocityOfX *= -1
+    def checkCollisionWithQuarintine(self,leftBounds,rightBounds,downBounds):
+        if self.x >= leftBounds and self.x <= rightBounds and self.velocityOfY > 0:
+            if self.y + self.radius > downBounds:
+                self.velocityOfY *= -1
+        elif self.x <= leftBounds and self.y >= downBounds:
+            if self.x + self.radius > leftBounds and self.velocityOfX > 0:
+                self.velocityOfX *= -1
             
     def checkCollisionWithWall(self,wall):
         rightBoundOfWall = 462

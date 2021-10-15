@@ -1,0 +1,413 @@
+************* Module project
+C: 18, 0: Trailing whitespace (trailing-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                     ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                           ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                                  ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                                       ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                                              ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                                                      ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                                                             ^ (bad-whitespace)
+C: 19, 0: Exactly one space required after comma
+    def __init__(self,width,height,text,colour,outline,screen,x,y):
+                                                               ^ (bad-whitespace)
+C: 32, 0: Line too long (101/100) (line-too-long)
+C: 32, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen, self.outline,(self.x-2, self.y-2, self.width+4, self.height+4))
+                                                  ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
+                                    ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
+                                                ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
+                                                        ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
+                                                               ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
+                                                                          ^ (bad-whitespace)
+C: 35, 0: Exactly one space required after comma
+        text = font.render(self.text,1,black)
+                                    ^ (bad-whitespace)
+C: 35, 0: Exactly one space required after comma
+        text = font.render(self.text,1,black)
+                                      ^ (bad-whitespace)
+C: 37, 0: Wrong continued indentation (add 8 spaces).
+                        self.y + (self.height/2 - (text.get_height()/2))))
+                        ^       | (bad-continuation)
+C: 38, 0: Exactly one space required after comma
+    def isOntop(self,mouse):
+                    ^ (bad-whitespace)
+C: 39, 0: Exactly one space required after comma
+        mouseX,mouseY = mouse;
+              ^ (bad-whitespace)
+W: 39, 0: Unnecessary semicolon (unnecessary-semicolon)
+C: 40, 0: Line too long (118/100) (line-too-long)
+C: 45, 0: Trailing whitespace (trailing-whitespace)
+C: 48, 0: Trailing whitespace (trailing-whitespace)
+C: 49, 0: Trailing whitespace (trailing-whitespace)
+C: 51, 0: Trailing whitespace (trailing-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                 ^ (bad-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                        ^ (bad-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                              ^ (bad-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                                   ^ (bad-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                                         ^ (bad-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                                                ^ (bad-whitespace)
+C: 62, 0: Exactly one space required after comma
+            button = Button(width,height,title,blue,black,screen,x,y)
+                                                                  ^ (bad-whitespace)
+C: 66, 0: Trailing whitespace (trailing-whitespace)
+C: 67, 0: Exactly one space required after comma
+    def intro(self,screen):
+                  ^ (bad-whitespace)
+C: 72, 0: Exactly one space required after comma
+        checkMarkImg = pygame.transform.scale(checkMarkImg,(112,112))
+                                                          ^ (bad-whitespace)
+C: 72, 0: Exactly one space required after comma
+        checkMarkImg = pygame.transform.scale(checkMarkImg,(112,112))
+                                                               ^ (bad-whitespace)
+C: 74, 0: Exactly one space required after comma
+        simulationOptions = ['High', 'Medium', 'None','socialBubbles', 'quarintine']
+                                                     ^ (bad-whitespace)
+C: 88, 0: Line too long (103/100) (line-too-long)
+C: 90, 0: Line too long (140/100) (line-too-long)
+W: 95, 0: Bad indentation. Found 19 spaces, expected 20 (bad-indentation)
+C: 95, 0: Exactly one space required after comma
+                   screen.blit(checkMarkImg,(checkMarkX,checkMarkY))
+                                           ^ (bad-whitespace)
+C: 95, 0: Exactly one space required after comma
+                   screen.blit(checkMarkImg,(checkMarkX,checkMarkY))
+                                                       ^ (bad-whitespace)
+W: 96, 0: Bad indentation. Found 19 spaces, expected 20 (bad-indentation)
+C: 97, 0: Trailing whitespace (trailing-whitespace)
+C:106, 0: Trailing whitespace (trailing-whitespace)
+C:108, 0: Trailing whitespace (trailing-whitespace)
+C:109, 0: Wrong continued indentation (remove 2 spaces).
+                    + 'the social distancing options enabled at once only')
+                  | ^ (bad-continuation)
+C:111, 0: Trailing whitespace (trailing-whitespace)
+C:115, 0: Trailing whitespace (trailing-whitespace)
+C:116, 0: Exactly one space required after comma
+    def __init__(self, width, height, Population, healthyCount, font,screen):
+                                                                    ^ (bad-whitespace)
+C:128, 0: Trailing whitespace (trailing-whitespace)
+C:129, 0: Exactly one space required after comma
+    def showScore(self,x, y,count,string,colour):
+                      ^ (bad-whitespace)
+C:129, 0: Exactly one space required after comma
+    def showScore(self,x, y,count,string,colour):
+                           ^ (bad-whitespace)
+C:129, 0: Exactly one space required after comma
+    def showScore(self,x, y,count,string,colour):
+                                 ^ (bad-whitespace)
+C:129, 0: Exactly one space required after comma
+    def showScore(self,x, y,count,string,colour):
+                                        ^ (bad-whitespace)
+C:131, 0: Exactly one space required after comma
+        screen.blit(score,(x,y))
+                         ^ (bad-whitespace)
+C:131, 0: Exactly one space required after comma
+        screen.blit(score,(x,y))
+                            ^ (bad-whitespace)
+C:132, 0: Trailing whitespace (trailing-whitespace)
+C:133, 0: Exactly one space required after comma
+    def initializePopulation(self,results,people):
+                                 ^ (bad-whitespace)
+C:133, 0: Exactly one space required after comma
+    def initializePopulation(self,results,people):
+                                         ^ (bad-whitespace)
+C:142, 0: Trailing whitespace (trailing-whitespace)
+C:143, 0: Trailing whitespace (trailing-whitespace)
+C:145, 0: Wrong continued indentation (remove 6 spaces).
+                                ra.randint(ymin, self.height-10), 'healthy',socialDistancing))
+                          |     ^ (bad-continuation)
+C:145, 0: Exactly one space required after comma
+                                ra.randint(ymin, self.height-10), 'healthy',socialDistancing))
+                                                                           ^ (bad-whitespace)
+W:149, 0: Bad indentation. Found 20 spaces, expected 16 (bad-indentation)
+W:150, 0: Bad indentation. Found 20 spaces, expected 16 (bad-indentation)
+C:151, 0: Wrong continued indentation (add 2 spaces).
+                                    ra.randint(ymin, self.height-10), 'healthy',socialDistancing))
+                                    ^ | (bad-continuation)
+C:151, 0: Exactly one space required after comma
+                                    ra.randint(ymin, self.height-10), 'healthy',socialDistancing))
+                                                                               ^ (bad-whitespace)
+W:152, 0: Bad indentation. Found 20 spaces, expected 16 (bad-indentation)
+C:153, 0: Line too long (106/100) (line-too-long)
+C:156, 0: Line too long (108/100) (line-too-long)
+C:158, 0: Trailing whitespace (trailing-whitespace)
+C:165, 0: Exactly one space required around assignment
+                personCount+=1
+                           ^^ (bad-whitespace)
+C:174, 0: Trailing whitespace (trailing-whitespace)
+C:175, 0: Exactly one space required after comma
+    def generateQuarintineException(self,person):
+                                        ^ (bad-whitespace)
+C:182, 0: Trailing whitespace (trailing-whitespace)
+W:187, 0: Unnecessary semicolon (unnecessary-semicolon)
+C:196, 0: Exactly one space required after comma
+            wall = Wall(x, y, width, height,self.screen)
+                                           ^ (bad-whitespace)
+C:211, 0: Exactly one space required after comma
+                if person.updatePerson(people,wall):
+                                             ^ (bad-whitespace)
+C:220, 0: Line too long (112/100) (line-too-long)
+C:228, 0: Trailing whitespace (trailing-whitespace)
+C:231, 0: Trailing whitespace (trailing-whitespace)
+C:233, 0: Exactly one space required after comma
+            self.showScore(100, 10,self.healthyCount,'Healthy',green)
+                                  ^ (bad-whitespace)
+C:233, 0: Exactly one space required after comma
+            self.showScore(100, 10,self.healthyCount,'Healthy',green)
+                                                    ^ (bad-whitespace)
+C:233, 0: Exactly one space required after comma
+            self.showScore(100, 10,self.healthyCount,'Healthy',green)
+                                                              ^ (bad-whitespace)
+C:234, 0: Exactly one space required after comma
+            self.showScore(215, 10, self.recoveredCount, 'Recovered',blue)
+                                                                    ^ (bad-whitespace)
+C:235, 0: Exactly one space required after comma
+            self.showScore(350, 10, self.deathCount, 'Dead',black)
+                                                           ^ (bad-whitespace)
+C:238, 0: Trailing whitespace (trailing-whitespace)
+C:240, 0: Trailing whitespace (trailing-whitespace)
+C:242, 0: Trailing whitespace (trailing-whitespace)
+C:243, 0: Exactly one space required after comma
+    def __init__(self,x,y,width,height,screen):
+                     ^ (bad-whitespace)
+C:243, 0: Exactly one space required after comma
+    def __init__(self,x,y,width,height,screen):
+                       ^ (bad-whitespace)
+C:243, 0: Exactly one space required after comma
+    def __init__(self,x,y,width,height,screen):
+                         ^ (bad-whitespace)
+C:243, 0: Exactly one space required after comma
+    def __init__(self,x,y,width,height,screen):
+                               ^ (bad-whitespace)
+C:243, 0: Exactly one space required after comma
+    def __init__(self,x,y,width,height,screen):
+                                      ^ (bad-whitespace)
+C:249, 0: Trailing whitespace (trailing-whitespace)
+C:251, 0: Trailing whitespace (trailing-whitespace)
+C:252, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,black,(self.x-2,self.y-2,self.width+4,self.height+4))
+                                    ^ (bad-whitespace)
+C:252, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,black,(self.x-2,self.y-2,self.width+4,self.height+4))
+                                          ^ (bad-whitespace)
+C:252, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,black,(self.x-2,self.y-2,self.width+4,self.height+4))
+                                                    ^ (bad-whitespace)
+C:252, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,black,(self.x-2,self.y-2,self.width+4,self.height+4))
+                                                             ^ (bad-whitespace)
+C:252, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,black,(self.x-2,self.y-2,self.width+4,self.height+4))
+                                                                          ^ (bad-whitespace)
+C:253, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,white,(self.x,self.y,self.width,self.height))
+                                    ^ (bad-whitespace)
+C:253, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,white,(self.x,self.y,self.width,self.height))
+                                          ^ (bad-whitespace)
+C:253, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,white,(self.x,self.y,self.width,self.height))
+                                                  ^ (bad-whitespace)
+C:253, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,white,(self.x,self.y,self.width,self.height))
+                                                         ^ (bad-whitespace)
+C:253, 0: Exactly one space required after comma
+        pygame.draw.rect(self.screen,white,(self.x,self.y,self.width,self.height))
+                                                                    ^ (bad-whitespace)
+C:254, 0: Trailing whitespace (trailing-whitespace)
+C:255, 0: Trailing whitespace (trailing-whitespace)
+C:256, 0: Exactly one space required after comma
+    def moveWall(self,delay):
+                     ^ (bad-whitespace)
+C:260, 0: Trailing whitespace (trailing-whitespace)
+C:261, 0: Trailing whitespace (trailing-whitespace)
+C:273, 0: Exactly one space required after comma
+    screen = pygame.display.set_mode((width,height))
+                                           ^ (bad-whitespace)
+C:275, 0: Exactly one space required after comma
+    sim = Simulation(width, height, Population, healthyCount, font,screen)
+                                                                  ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+    sim.initializePopulation(introResults,people)
+                                         ^ (bad-whitespace)
+C:281, 0: Exactly one space required after comma
+    sim.runSimulation(people,introResults)
+                            ^ (bad-whitespace)
+C:282, 0: Trailing whitespace (trailing-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  2, 0: Unable to import 'pygame' (import-error)
+C:  5, 0: Constant name "green" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:  6, 0: Constant name "blue" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:  7, 0: Constant name "black" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:  8, 0: Constant name "red" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:  9, 0: Constant name "white" doesn't conform to UPPER_CASE naming style (invalid-name)
+C: 11, 0: Constant name "quarintineX" doesn't conform to UPPER_CASE naming style (invalid-name)
+C: 12, 0: Constant name "quarintineY" doesn't conform to UPPER_CASE naming style (invalid-name)
+C: 13, 0: Constant name "quarintineHeight" doesn't conform to UPPER_CASE naming style (invalid-name)
+C: 14, 0: Constant name "quarintineWidth" doesn't conform to UPPER_CASE naming style (invalid-name)
+C: 28, 8: Attribute name "clickedCounter" doesn't conform to snake_case naming style (invalid-name)
+C: 27, 8: Attribute name "y" doesn't conform to snake_case naming style (invalid-name)
+C: 26, 8: Attribute name "x" doesn't conform to snake_case naming style (invalid-name)
+C: 17, 0: Missing class docstring (missing-docstring)
+R: 17, 0: Too many instance attributes (9/7) (too-many-instance-attributes)
+C: 17, 0: Old-style class defined. (old-style-class)
+W: 19,28: Redefining name 'height' from outer scope (line 264) (redefined-outer-name)
+W: 19,22: Redefining name 'width' from outer scope (line 263) (redefined-outer-name)
+W: 19,55: Redefining name 'screen' from outer scope (line 273) (redefined-outer-name)
+C: 19, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+C: 19, 4: Argument name "y" doesn't conform to snake_case naming style (invalid-name)
+R: 19, 4: Too many arguments (9/5) (too-many-arguments)
+W: 34, 8: Redefining name 'font' from outer scope (line 269) (redefined-outer-name)
+C: 31, 4: Method name "drawButton" doesn't conform to snake_case naming style (invalid-name)
+C: 31, 4: Missing method docstring (missing-docstring)
+C: 38, 4: Method name "isOntop" doesn't conform to snake_case naming style (invalid-name)
+C: 38, 4: Missing method docstring (missing-docstring)
+C: 39, 8: Variable name "mouseX" doesn't conform to snake_case naming style (invalid-name)
+C: 39,15: Variable name "mouseY" doesn't conform to snake_case naming style (invalid-name)
+E: 47,31: Instance of 'Button' has no 'isClicked' member (no-member)
+C: 50, 0: Missing class docstring (missing-docstring)
+C: 50, 0: Old-style class defined. (old-style-class)
+W: 50, 0: Class has no __init__ method (no-init)
+W: 55, 8: Redefining name 'height' from outer scope (line 264) (redefined-outer-name)
+W: 54, 8: Redefining name 'width' from outer scope (line 263) (redefined-outer-name)
+W: 52,28: Redefining name 'screen' from outer scope (line 273) (redefined-outer-name)
+C: 52, 4: Method name "createButtons" doesn't conform to snake_case naming style (invalid-name)
+C: 52, 4: Missing method docstring (missing-docstring)
+C: 53, 8: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+C: 56, 8: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+C: 57, 8: Variable name "buttonList" doesn't conform to snake_case naming style (invalid-name)
+C: 58, 8: Variable name "buttonTitles" doesn't conform to snake_case naming style (invalid-name)
+C: 64,12: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+R: 52, 4: Method could be a function (no-self-use)
+W: 67,19: Redefining name 'screen' from outer scope (line 273) (redefined-outer-name)
+C: 67, 4: Missing method docstring (missing-docstring)
+C: 69, 8: Variable name "buttonList" doesn't conform to snake_case naming style (invalid-name)
+C: 71, 8: Variable name "checkMarkImg" doesn't conform to snake_case naming style (invalid-name)
+C: 72, 8: Variable name "checkMarkImg" doesn't conform to snake_case naming style (invalid-name)
+C: 73, 8: Variable name "checkMarkX" doesn't conform to snake_case naming style (invalid-name)
+C: 74, 8: Variable name "simulationOptions" doesn't conform to snake_case naming style (invalid-name)
+C: 92,12: Variable name "checkMarkY" doesn't conform to snake_case naming style (invalid-name)
+C: 93,12: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+C: 97,16: Variable name "checkMarkY" doesn't conform to snake_case naming style (invalid-name)
+C: 99,12: Variable name "errorCount" doesn't conform to snake_case naming style (invalid-name)
+C:101,12: Variable name "errorCount" doesn't conform to snake_case naming style (invalid-name)
+C:103,12: Variable name "errorCount" doesn't conform to snake_case naming style (invalid-name)
+C:105,12: Variable name "errorCount" doesn't conform to snake_case naming style (invalid-name)
+R: 67, 4: Too many branches (13/12) (too-many-branches)
+C:120, 8: Attribute name "recoveredCount" doesn't conform to snake_case naming style (invalid-name)
+C:126, 8: Attribute name "newSickCount" doesn't conform to snake_case naming style (invalid-name)
+C:122, 8: Attribute name "healthyCount" doesn't conform to snake_case naming style (invalid-name)
+C:127, 8: Attribute name "deathCount" doesn't conform to snake_case naming style (invalid-name)
+C:121, 8: Attribute name "sickCount" doesn't conform to snake_case naming style (invalid-name)
+C:119, 8: Attribute name "Population" doesn't conform to snake_case naming style (invalid-name)
+C:114, 0: Missing class docstring (missing-docstring)
+R:114, 0: Too many instance attributes (11/7) (too-many-instance-attributes)
+C:114, 0: Old-style class defined. (old-style-class)
+W:116,30: Redefining name 'height' from outer scope (line 264) (redefined-outer-name)
+W:116,23: Redefining name 'width' from outer scope (line 263) (redefined-outer-name)
+W:116,50: Redefining name 'healthyCount' from outer scope (line 262) (redefined-outer-name)
+W:116,64: Redefining name 'font' from outer scope (line 269) (redefined-outer-name)
+W:116,69: Redefining name 'screen' from outer scope (line 273) (redefined-outer-name)
+W:116,38: Redefining name 'Population' from outer scope (line 267) (redefined-outer-name)
+C:116, 4: Argument name "Population" doesn't conform to snake_case naming style (invalid-name)
+C:116, 4: Argument name "healthyCount" doesn't conform to snake_case naming style (invalid-name)
+R:116, 4: Too many arguments (7/5) (too-many-arguments)
+C:129, 4: Method name "showScore" doesn't conform to snake_case naming style (invalid-name)
+C:129, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+C:129, 4: Argument name "y" doesn't conform to snake_case naming style (invalid-name)
+C:129, 4: Missing method docstring (missing-docstring)
+R:129, 4: Too many arguments (6/5) (too-many-arguments)
+R:129, 4: Method could be a function (no-self-use)
+W:133,42: Redefining name 'people' from outer scope (line 279) (redefined-outer-name)
+C:133, 4: Method name "initializePopulation" doesn't conform to snake_case naming style (invalid-name)
+C:133, 4: Missing method docstring (missing-docstring)
+C:137, 8: Variable name "socialDistancing" doesn't conform to snake_case naming style (invalid-name)
+C:138, 8: Variable name "patientZero" doesn't conform to snake_case naming style (invalid-name)
+C:140, 8: Variable name "personCount" doesn't conform to snake_case naming style (invalid-name)
+C:165,16: Variable name "personCount" doesn't conform to snake_case naming style (invalid-name)
+C:172,16: Variable name "personCount" doesn't conform to snake_case naming style (invalid-name)
+W:136, 8: Unused variable 'count' (unused-variable)
+W:141,12: Unused variable 'i' (unused-variable)
+W:175,41: Redefining name 'person' from outer scope (line 3) (redefined-outer-name)
+C:175, 4: Method name "generateQuarintineException" doesn't conform to snake_case naming style (invalid-name)
+C:175, 4: Missing method docstring (missing-docstring)
+R:175, 4: Method could be a function (no-self-use)
+W:183,28: Redefining name 'people' from outer scope (line 279) (redefined-outer-name)
+W:189, 8: Redefining name 'height' from outer scope (line 264) (redefined-outer-name)
+W:188, 8: Redefining name 'width' from outer scope (line 263) (redefined-outer-name)
+W:210,16: Redefining name 'person' from outer scope (line 3) (redefined-outer-name)
+C:183, 4: Method name "runSimulation" doesn't conform to snake_case naming style (invalid-name)
+C:183, 4: Missing method docstring (missing-docstring)
+C:186, 8: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+C:187, 8: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+C:190, 8: Variable name "alreadyRecovered" doesn't conform to snake_case naming style (invalid-name)
+C:191, 8: Variable name "quarintineWall" doesn't conform to snake_case naming style (invalid-name)
+C:201,16: Variable name "alreadyRecovered" doesn't conform to snake_case naming style (invalid-name)
+W:190, 8: Unused variable 'alreadyRecovered' (unused-variable)
+W:191, 8: Unused variable 'quarintineWall' (unused-variable)
+C:245, 8: Attribute name "y" doesn't conform to snake_case naming style (invalid-name)
+C:244, 8: Attribute name "x" doesn't conform to snake_case naming style (invalid-name)
+C:241, 0: Missing class docstring (missing-docstring)
+C:241, 0: Old-style class defined. (old-style-class)
+W:243,32: Redefining name 'height' from outer scope (line 264) (redefined-outer-name)
+W:243,26: Redefining name 'width' from outer scope (line 263) (redefined-outer-name)
+W:243,39: Redefining name 'screen' from outer scope (line 273) (redefined-outer-name)
+C:243, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+C:243, 4: Argument name "y" doesn't conform to snake_case naming style (invalid-name)
+R:243, 4: Too many arguments (6/5) (too-many-arguments)
+C:250, 4: Method name "drawRectangle" doesn't conform to snake_case naming style (invalid-name)
+C:250, 4: Missing method docstring (missing-docstring)
+C:256, 4: Method name "moveWall" doesn't conform to snake_case naming style (invalid-name)
+C:256, 4: Missing method docstring (missing-docstring)
+C:262, 4: Constant name "healthyCount" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:263, 4: Constant name "width" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:264, 4: Constant name "height" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:265, 4: Constant name "testX" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:266, 4: Constant name "testY" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:267, 4: Constant name "Population" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:269, 4: Constant name "font" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:270, 4: Constant name "running" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:272, 4: Constant name "clock" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:273, 4: Constant name "screen" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:275, 4: Constant name "sim" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:276, 4: Constant name "menu" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:277, 4: Constant name "introResults" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:279, 4: Constant name "people" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+--------------------------------------------------------------------
+Your code has been rated at -2.20/10 (previous run: -2.20/10, +0.00)
+

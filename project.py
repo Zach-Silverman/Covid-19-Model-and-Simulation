@@ -1,13 +1,12 @@
-import pygame
 import random as ra
+import pygame
 from person import person
-import time
+
 green = (0, 255, 0)
 blue = (0, 0, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)
 white = (255, 255, 255)
-grey = (230, 230, 230)
 
 quarintineX = 800
 quarintineY = 400
@@ -29,8 +28,8 @@ class Button:
         self.clickedCounter = 0
     #size is a tuple
 
-    def drawButton(self,insideColour):
-        pygame.draw.rect(self.screen, insideColour,(self.x-2, self.y-2, self.width+4, self.height+4))
+    def drawButton(self):
+        pygame.draw.rect(self.screen, self.outline,(self.x-2, self.y-2, self.width+4, self.height+4))
         pygame.draw.rect(self.screen,self.colour,(self.x,self.y,self.width,self.height))
         font = pygame.font.SysFont('Helvetica', 20)
         text = font.render(self.text,1,black)
@@ -44,13 +43,10 @@ class Button:
         self.colour = blue
         return False
     
-    def __str__(self):
-        return self.text + str(self.isClicked)
-    
     
 class Menu:
     
-    def createButtons(self,screen):
+    def createButtons(self, screen):
         x = 400
         width = 400
         height = 80
@@ -60,7 +56,7 @@ class Menu:
                         'Medium Social Distancing', 'No Social Distancing',
                         'Social Bubbles', 'Quarantine Enabled?']
         for title in buttonTitles:
-            button = Button(width,height,title,blue,None,screen,x,y)
+            button = Button(width,height,title,blue,black,screen,x,y)
             buttonList.append(button)
             y += 100
         return buttonList
@@ -84,14 +80,13 @@ class Menu:
                         intro = False
                 screen.fill(white)
                 for button in buttonList:
-                    button.drawButton(black)
+                    button.drawButton()
                     button.isOntop(pygame.mouse.get_pos())
                     if event.type == pygame.MOUSEBUTTONDOWN and button.isOntop(pygame.mouse.get_pos()):
                         button.clickedCounter += 1
                 text = smallfont.render('Welcome to my Pygame for Covid 19, Click The Buttons Below To Configure Your Options', True, black)
                 screen.blit(text, [200, 150])
             checkMarkY = 175
-            statusIndex = 0
             for i in range(len(buttonList)):
                 if (buttonList[i].clickedCounter % 2) != 0:
                    screen.blit(checkMarkImg,(checkMarkX,checkMarkY))
@@ -125,7 +120,6 @@ class Simulation:
         self.font = font
         self.screen = screen
         self.running = True
-        self.MAXFPS = 20
         self.newSickCount = 0
         self.deathCount = 0
         
@@ -136,15 +130,12 @@ class Simulation:
     def initializePopulation(self,results,people):
         minimum = 10
         ymin = 40
-        mediumSocialDistance = 0
         count = 0
         socialDistancing = False
         patientZero = person(ra.randint(minimum, self.width-10),
                              ra.randint(ymin, self.height-10), 'sick', socialDistancing)
         personCount = 0
         for i in range(self.Population - 1):
-           
-           
             guy = (person(ra.randint(minimum, self.width-10),
                                 ra.randint(ymin, self.height-10), 'healthy',socialDistancing))
             people.append(guy)
@@ -154,11 +145,11 @@ class Simulation:
                     person2 = (person(ra.randint(minimum, self.width-10),
                                     ra.randint(ymin, self.height-10), 'healthy',socialDistancing))
                     people.append(person2)
-                # while 'quarintine' in results and person2.x >= quarintineX and person2.y >= quarintineY:
-                    # people.remove(person2)
-                    # person2 = (person(ra.randint(minimum, self.width-10),
-                                        # ra.randint(minimum, self.height-10), 'healthy', socialDistancing))
-                    # people.append(person2)
+            while 'quarintine' in results and person2.x >= quarintineX and person2.y >= quarintineY:
+                people.remove(person2)
+                person2 = (person(ra.randint(minimum, self.width-10),
+                                    ra.randint(minimum, self.height-10), 'healthy', socialDistancing))
+                people.append(person2)
         
         if 'Medium' in results:
             for guy in people:
@@ -193,9 +184,9 @@ class Simulation:
         height = 800
         alreadyRecovered = False
         quarintineWall = None
-        # if 'quarintine' in results:
-            # quarintineWall = Wall(quarintineX, quarintineY,
-                                #   quarintineWidth, quarintineHeight, screen)
+        if 'quarintine' in results:
+           quarintineWall = Wall(quarintineX, quarintineY,
+                                 quarintineWidth, quarintineHeight, screen)
         if 'socialBubbles' in results:
             wall = Wall(x, y, width, height,self.screen)
         width = (self.width / 4)
@@ -209,8 +200,8 @@ class Simulation:
             self.screen.fill(white)
             self.recoveredCount = 0
             self.deathCount = 0
-            # if 'quarintine' in results:
-                    # quarintineWall.drawRectangle()
+            if 'quarintine' in results:
+                    quarintineWall.drawRectangle()
             for person in people:
                 if person.updatePerson(people,wall):
                     self.healthyCount -= 1
@@ -220,14 +211,14 @@ class Simulation:
                     if person.status == 'dead':
                         self.deathCount += 1
                         self.recoveredCount -= 1
-                # if 'quarintine' in results:
-                    # person.checkCollisionWithQuarintine(quarintineX,quarintineWidth + quarintineX,quarintineY)
+                if 'quarintine' in results:
+                    person.checkCollisionWithQuarintine(quarintineX,quarintineWidth + quarintineX,quarintineY)
                 person.drawPerson(screen)
-            # for person in people:
-                # if self.recoveredCount == 1 and person.status == 'sick' and not alreadyRecovered:
-                    # self.generateQuarintineException(person)
-                    # person.checkCollisionWithQuarintine(
-                        # quarintineX, quarintineWidth + quarintineX, quarintineY)
+                for person in people:
+                    if self.recoveredCount == 1 and person.status == 'sick' and not alreadyRecovered and 'quarintine' in results:
+                        self.generateQuarintineException(person)
+                        person.checkCollisionWithQuarintine(
+                            quarintineX, quarintineWidth + quarintineX, quarintineY)
             self.newSickCount = self.sickCount - self.recoveredCount - self.deathCount
             if 'socialBubbles' in results:        
                 wall.drawRectangle()
@@ -266,8 +257,6 @@ if __name__ == "__main__":
     healthyCount = 199
     width = 1200
     height = 800
-    testX = 10
-    testY = 10
     Population = 200
     pygame.init()
     font = pygame.font.Font('freesansbold.ttf', 16)
