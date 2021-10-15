@@ -10,7 +10,7 @@
 ## Built With
 
 * [Pygame](https://www.pygame.org/)
-* [Numpy](https://https://numpy.org/)
+* [Numpy](https://numpy.org/)
 * [Random](https://docs.python.org/3/library/random.html)
 * [Math](https://docs.python.org/3/library/math.html)
 
