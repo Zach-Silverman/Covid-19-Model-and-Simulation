@@ -1,8 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Covid-19 Simulation
 
- This project simulates the spread of a pandemic and demonstrates how certain government guidlines can
-    <br> prevent the spread
+ This project simulates the spread of a pandemic and demonstrates how certain government guidlines can  prevent the spread
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
